@@ -1,6 +1,13 @@
+# 2020_01_09_C_Algorithms
+# copy_right_Megan
+# Less_Common_Multiple
+# constraints : arrays[n] 1<=n<=15   each element is less than 100 .
+# main ideas : We know that prime numbers are 2,3,5,7 whose Squared are smaller than 100. 
+               So we only need to figure out if the element has a factor as 2,3,5,7.
+
 int solution(int arr[], size_t arr_len) {
-        int answer = 1;
-    int count=-1;
+    int answer = 1;    // set initally as 1 since it will be multiplied by others not added.
+    int count=-1;   // count-bound concepts as a Semaphore in OS so that we can avoid counting a prime again or not.
     int bound=0;
    int prime[4]={2,3,5,7};
    int res[4]={1,1,1,1};
