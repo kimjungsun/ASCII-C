@@ -1,3 +1,5 @@
+// 2020_01_09_THU
+
 #include<string.h>
 int main()
 {
